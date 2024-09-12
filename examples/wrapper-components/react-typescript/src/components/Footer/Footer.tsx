@@ -52,7 +52,7 @@ function Footer() {
           <IfxIcon icon="c-info-16"></IfxIcon>
         </IfxLink>
       </div>
-      <div slot="buttons">
+      <div slot="info">
         <IfxLink variant="menu" href="https://yourwebsite.com/terms" target="_blank">Terms</IfxLink>
       </div>
   </IfxFooter>
