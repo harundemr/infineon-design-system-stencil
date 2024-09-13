@@ -13,7 +13,7 @@
     "test:local": "run-s build:wrapper preview:link"
   },
   "dependencies": {
-    "@infineon/infineon-design-system-vue": "^18.3.0",
+    "@infineon/infineon-design-system-vue": "*",
     "vue": "^3.2.47"
   },
   "devDependencies": {

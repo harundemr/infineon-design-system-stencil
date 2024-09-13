@@ -2,8 +2,8 @@
   <div>
     <h2>Checkbox</h2>
     <form @submit.prevent="handleSubmit">
-      <ifx-checkbox :disabled="disabled" @ifxChange="handleCheckboxChange" :value="checkboxValue" :error="error"
-        name="name">label</ifx-checkbox>
+      <IfxCheckbox :disabled="disabled"  v-model="checkboxValue" :error="error"
+        name="name">label</IfxCheckbox>
       <br />
 
       <ifx-button theme="default" type="submit">Submit</ifx-button>
@@ -29,16 +29,12 @@
 </template>
 
 <script setup lang="ts">
+import { IfxCheckbox } from '@infineon/infineon-design-system-vue';
 import { ref } from 'vue';
 
 const disabled = ref(false);
 const checkboxValue = ref(false);
 const error = ref(false);
-
-function handleCheckboxChange(event: CustomEvent) {
-  console.log("updating checkbox value: ", event.detail)
-  checkboxValue.value = event.detail;
-};
 
 
 const handleSubmit = () => {

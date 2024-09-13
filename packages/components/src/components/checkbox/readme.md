@@ -18,9 +18,9 @@
 
 ## Events
 
-| Event       | Description | Type               |
-| ----------- | ----------- | ------------------ |
-| `ifxChange` |             | `CustomEvent<any>` |
+| Event        | Description | Type                   |
+| ------------ | ----------- | ---------------------- |
+| `ifx-change` |             | `CustomEvent<boolean>` |
 
 
 ## Methods

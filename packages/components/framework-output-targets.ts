@@ -3,16 +3,20 @@ import { ComponentModelConfig, vueOutputTarget } from '@stencil/vue-output-targe
 import { reactOutputTarget } from '@stencil/react-output-target';
 import { ValueAccessorConfig, angularOutputTarget } from '@stencil/angular-output-target';
 
-
 const vueComponentModels: ComponentModelConfig[] = [
   {
-    elements: ['ifx-text-field', 'ifx-search-field', 'ifx-search-bar',],
+    elements: ['ifx-text-field', 'ifx-search-field', 'ifx-search-bar'],
     event: 'ifxInput',
     targetAttr: 'value',
   },
   {
     elements: ['ifx-select, ifx-multiselect'],
     event: 'ifxSelect',
+    targetAttr: 'value',
+  },
+  {
+    elements: ['ifx-checkbox'],
+    event: 'ifx-change',
     targetAttr: 'value',
   },
 ];
@@ -52,5 +56,7 @@ export const frameworkTargets = [
     esModules: false,
     excludeComponents,
   }),
+
+
 
 ];
